@@ -1,6 +1,6 @@
 function retornaData(data){
     if (data && !(data instanceof Date)){
-        throw new TypeError('inferno');
+        throw new TypeError('');
     }
     if (!data) {
         data= new Date();
