@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300&display=swap');
+
+:root{
+    --primary-color: #ed4264;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    background: linear-gradient(0.25turn, #f4e2d8, #ddd6f3);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1{
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+.container{
+    width: 30%;
+    margin:10em auto;
+    background-color: transparent;
+    border: solid blue 0.2em;
+    border-radius: 0.5em;
+    padding: 2em;
+}
+.container input{
+    display: block;
+    margin: 0 auto 0.5em;
+    width: 100%;
+    height: 2.5em;
+    border:none;
+    padding-left: 0.8em;
+    font-size: 1em;
+    border-radius: 0.3em;
+    color: #333;
+}
+.grid-ob{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.3em;
+}
+.grid-ob button{
+    background-color: transparent;
+    font-size: 3em;
+    text-align: center;
+    border-radius: 0.5rem;
+    color:rgb(1, 25, 44);
+    border: 0.1rem solid white;
+}
+#button-igual{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.grid-ob button:hover{
+    background-color: rgba(0, 0, 0, 0.061);
+}
+@media screen and ( max-width: 1012px){
+    .container{
+        width: 60%;
+    }
+}
+@media screen and ( max-width: 632px){
+    .container{
+        width: 80%;
+        padding: 0.5em;
+    }
+    .grid-ob div{
+        font-size: 2em;
+    }
+}
