@@ -50,10 +50,6 @@ h1{
     color:rgb(1, 25, 44);
     border: 0.1rem solid white;
 }
-#button-igual{
-    grid-column-start: 3;
-    grid-column-end: 5;
-}
 .grid-ob button:hover{
     background-color: rgba(0, 0, 0, 0.061);
 }
